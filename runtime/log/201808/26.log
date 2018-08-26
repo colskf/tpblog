@@ -1,0 +1,1342 @@
+---------------------------------------------------------------
+[ 2018-08-26T09:01:32+08:00 ] 127.0.0.1 GET tpblog.local.cn/
+[运行时间：0.158849s] [吞吐率：6.30req/s] [内存消耗：4,130.67kb] [文件加载：83]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'frontend/Index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\index\homepage.tpl [ array (
+  0 => 'articles',
+  1 => 'tags',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003450s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.002978s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` ORDER BY `id` DESC LIMIT 5 [ RunTime:0.001291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tags` [ RunTime:0.001118s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tags` ORDER BY `id` DESC [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_users` [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000549s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:01:36+08:00 ] 127.0.0.1 GET tpblog.local.cn/
+[运行时间：0.462731s] [吞吐率：2.16req/s] [内存消耗：4,130.59kb] [文件加载：83]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'frontend/Index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\index\homepage.tpl [ array (
+  0 => 'articles',
+  1 => 'tags',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.224786s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.004030s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` ORDER BY `id` DESC LIMIT 5 [ RunTime:0.001405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tags` [ RunTime:0.003255s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tags` ORDER BY `id` DESC [ RunTime:0.001513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_users` [ RunTime:0.003158s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000674s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:01:37+08:00 ] 127.0.0.1 GET tpblog.local.cn/ajax/tags
+[运行时间：0.160526s] [吞吐率：6.23req/s] [内存消耗：3,978.17kb] [文件加载：78]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'ajax/tags',
+  'route' => 'frontend/Article/tagList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://tpblog.local.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\ajax\tag_list.tpl [ array (
+  0 => 'tags',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004396s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tags` [ RunTime:0.001514s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tags` ORDER BY `id` DESC [ RunTime:0.001190s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:01:37+08:00 ] 127.0.0.1 GET tpblog.local.cn/ajax/categories
+[运行时间：0.170770s] [吞吐率：5.86req/s] [内存消耗：3,906.38kb] [文件加载：77]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'ajax/categories',
+  'route' => 'frontend/Article/categoryList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://tpblog.local.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\ajax\category_list.tpl [ array (
+  0 => 'categorys',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003199s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_users` [ RunTime:0.002517s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000794s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_categories` [ RunTime:0.002912s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_categories` WHERE  `article_num` > 0 ORDER BY `id` DESC [ RunTime:0.001011s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:01:39+08:00 ] 127.0.0.1 GET tpblog.local.cn/articles/4/show
+[运行时间：0.160246s] [吞吐率：6.24req/s] [内存消耗：4,112.95kb] [文件加载：85]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'articles/<id>/show',
+  'route' => 'frontend/Article/detail',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+    'id' => '4',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tpblog.local.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\detail.tpl [ array (
+  0 => 'article',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019368s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.011207s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] UPDATE `blog_articles`  SET `views` = 6  WHERE  `id` = 4 [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_categories` [ RunTime:0.001757s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_categories` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000588s ]
+[ error ] [8]Trying to get property of non-object[D:\wamp64\www\tpblog\runtime\temp\24ce3aa7efa558f69808ef64a3dd3a2b.php:89]
+---------------------------------------------------------------
+[ 2018-08-26T09:12:15+08:00 ] 127.0.0.1 GET tpblog.local.cn/
+[运行时间：0.144309s] [吞吐率：6.93req/s] [内存消耗：4,130.59kb] [文件加载：83]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'frontend/Index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\index\homepage.tpl [ array (
+  0 => 'articles',
+  1 => 'tags',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001917s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.001076s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tags` [ RunTime:0.001140s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tags` ORDER BY `id` DESC [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_users` [ RunTime:0.001115s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001129s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:12:18+08:00 ] 127.0.0.1 GET tpblog.local.cn/articles/4/show
+[运行时间：0.148555s] [吞吐率：6.73req/s] [内存消耗：4,112.95kb] [文件加载：85]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'articles/<id>/show',
+  'route' => 'frontend/Article/detail',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+    'id' => '4',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tpblog.local.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\detail.tpl [ array (
+  0 => 'article',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002042s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.001188s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] UPDATE `blog_articles`  SET `views` = 7  WHERE  `id` = 4 [ RunTime:0.012310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_categories` [ RunTime:0.001216s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_categories` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000555s ]
+[ error ] [8]Trying to get property of non-object[D:\wamp64\www\tpblog\runtime\temp\24ce3aa7efa558f69808ef64a3dd3a2b.php:89]
+---------------------------------------------------------------
+[ 2018-08-26T09:14:31+08:00 ] 127.0.0.1 GET tpblog.local.cn/
+[运行时间：0.151001s] [吞吐率：6.62req/s] [内存消耗：4,130.59kb] [文件加载：83]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'frontend/Index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\index\homepage.tpl [ array (
+  0 => 'articles',
+  1 => 'tags',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001992s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.008129s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tags` [ RunTime:0.001046s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tags` ORDER BY `id` DESC [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_users` [ RunTime:0.001291s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000554s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:14:33+08:00 ] 127.0.0.1 GET tpblog.local.cn/user/2/info
+[运行时间：0.147044s] [吞吐率：6.80req/s] [内存消耗：4,296.67kb] [文件加载：83]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'user/<id>/info',
+  'route' => 'frontend/Article/userInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tpblog.local.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\user_info.tpl [ array (
+  0 => 'user',
+  1 => 'articles',
+  2 => 'page',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002177s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_users` [ RunTime:0.001110s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.001255s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_articles` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.001869s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` WHERE  `user_id` = 2 ORDER BY `id` DESC LIMIT 0,8 [ RunTime:0.000639s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:14:33+08:00 ] 127.0.0.1 GET tpblog.local.cn/ajax/categories?uid=2
+[运行时间：0.157528s] [吞吐率：6.35req/s] [内存消耗：3,907.48kb] [文件加载：77]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'ajax/categories',
+  'route' => 'frontend/Article/categoryList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://tpblog.local.cn/user/2/info',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+  'uid' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\ajax\category_list.tpl [ array (
+  0 => 'categorys',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002701s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_users` [ RunTime:0.001564s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_categories` [ RunTime:0.001916s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_categories` WHERE  `article_num` > 0  AND `user_id` = 2 ORDER BY `id` DESC [ RunTime:0.000961s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:14:35+08:00 ] 127.0.0.1 GET tpblog.local.cn/articles/4/show
+[运行时间：0.171967s] [吞吐率：5.82req/s] [内存消耗：4,112.97kb] [文件加载：85]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'articles/<id>/show',
+  'route' => 'frontend/Article/detail',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+    'id' => '4',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tpblog.local.cn/user/2/info',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\detail.tpl [ array (
+  0 => 'article',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002141s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.001094s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] UPDATE `blog_articles`  SET `views` = 8  WHERE  `id` = 4 [ RunTime:0.012446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_categories` [ RunTime:0.004824s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_categories` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000608s ]
+[ error ] [8]Trying to get property of non-object[D:\wamp64\www\tpblog\runtime\temp\24ce3aa7efa558f69808ef64a3dd3a2b.php:89]
+---------------------------------------------------------------
+[ 2018-08-26T09:14:38+08:00 ] 127.0.0.1 GET tpblog.local.cn/user/2/info
+[运行时间：0.133126s] [吞吐率：7.51req/s] [内存消耗：4,098.27kb] [文件加载：81]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'user/<id>/info',
+  'route' => 'frontend/Article/userInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tpblog.local.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\user_info.tpl [ array (
+  0 => 'user',
+  1 => 'articles',
+  2 => 'page',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002187s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_users` [ RunTime:0.001153s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.001291s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_articles` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.002136s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` WHERE  `user_id` = 2 ORDER BY `id` DESC LIMIT 0,8 [ RunTime:0.000652s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:16:11+08:00 ] 127.0.0.1 GET tpblog.local.cn/articles/4/show
+[运行时间：0.150100s] [吞吐率：6.66req/s] [内存消耗：4,112.97kb] [文件加载：85]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'articles/<id>/show',
+  'route' => 'frontend/Article/detail',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+    'id' => '4',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tpblog.local.cn/user/2/info',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\detail.tpl [ array (
+  0 => 'article',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002225s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.001146s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.011753s ]
+[ sql ] [ SQL ] UPDATE `blog_articles`  SET `views` = 9  WHERE  `id` = 4 [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_categories` [ RunTime:0.001212s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_categories` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000546s ]
+[ error ] [8]Trying to get property of non-object[D:\wamp64\www\tpblog\runtime\temp\24ce3aa7efa558f69808ef64a3dd3a2b.php:89]
+---------------------------------------------------------------
+[ 2018-08-26T09:16:28+08:00 ] 127.0.0.1 GET tpblog.local.cn/user/2/info
+[运行时间：0.134843s] [吞吐率：7.42req/s] [内存消耗：4,098.27kb] [文件加载：81]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'user/<id>/info',
+  'route' => 'frontend/Article/userInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tpblog.local.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\user_info.tpl [ array (
+  0 => 'user',
+  1 => 'articles',
+  2 => 'page',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002644s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_users` [ RunTime:0.001170s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.012508s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_articles` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` WHERE  `user_id` = 2 ORDER BY `id` DESC LIMIT 0,8 [ RunTime:0.000632s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:19:44+08:00 ] 127.0.0.1 GET tpblog.local.cn/
+[运行时间：0.143163s] [吞吐率：6.99req/s] [内存消耗：4,130.59kb] [文件加载：83]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'frontend/Index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\index\homepage.tpl [ array (
+  0 => 'articles',
+  1 => 'tags',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002100s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.001131s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tags` [ RunTime:0.001497s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tags` ORDER BY `id` DESC [ RunTime:0.014199s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_users` [ RunTime:0.001205s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000660s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:19:45+08:00 ] 127.0.0.1 GET tpblog.local.cn/articles/4/show
+[运行时间：0.127495s] [吞吐率：7.84req/s] [内存消耗：4,112.95kb] [文件加载：85]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'articles/<id>/show',
+  'route' => 'frontend/Article/detail',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+    'id' => '4',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tpblog.local.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\detail.tpl [ array (
+  0 => 'article',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002602s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.001271s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.002190s ]
+[ sql ] [ SQL ] UPDATE `blog_articles`  SET `views` = 10  WHERE  `id` = 4 [ RunTime:0.000899s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_categories` [ RunTime:0.001153s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_categories` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000552s ]
+[ error ] [8]Trying to get property of non-object[D:\wamp64\www\tpblog\runtime\temp\24ce3aa7efa558f69808ef64a3dd3a2b.php:89]
+---------------------------------------------------------------
+[ 2018-08-26T09:56:58+08:00 ] 127.0.0.1 GET tpblog.local.cn/articles/4/show
+[运行时间：0.140237s] [吞吐率：7.13req/s] [内存消耗：4,115.16kb] [文件加载：85]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'articles/<id>/show',
+  'route' => 'frontend/Article/detail',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+    'id' => '4',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tpblog.local.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\detail.tpl [ array (
+  0 => 'article',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002284s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.001939s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000619s ]
+[ sql ] [ SQL ] UPDATE `blog_articles`  SET `views` = 11  WHERE  `id` = 4 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_categories` [ RunTime:0.001144s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_categories` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000544s ]
+[ error ] [8]Trying to get property of non-object[D:\wamp64\www\tpblog\runtime\temp\24ce3aa7efa558f69808ef64a3dd3a2b.php:89]
+---------------------------------------------------------------
+[ 2018-08-26T09:57:00+08:00 ] 127.0.0.1 GET tpblog.local.cn/
+[运行时间：0.153258s] [吞吐率：6.52req/s] [内存消耗：4,130.59kb] [文件加载：83]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'frontend/Index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\index\homepage.tpl [ array (
+  0 => 'articles',
+  1 => 'tags',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002193s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.001127s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tags` [ RunTime:0.021836s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tags` ORDER BY `id` DESC [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_users` [ RunTime:0.001559s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000992s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000614s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:57:01+08:00 ] 127.0.0.1 GET tpblog.local.cn/user/2/info
+[运行时间：0.144773s] [吞吐率：6.91req/s] [内存消耗：4,100.39kb] [文件加载：81]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'user/<id>/info',
+  'route' => 'frontend/Article/userInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+    'id' => '2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tpblog.local.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\user_info.tpl [ array (
+  0 => 'user',
+  1 => 'articles',
+  2 => 'page',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002126s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_users` [ RunTime:0.001054s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.015885s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_articles` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.009769s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` WHERE  `user_id` = 2 ORDER BY `id` DESC LIMIT 0,8 [ RunTime:0.000667s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:57:01+08:00 ] 127.0.0.1 GET tpblog.local.cn/ajax/categories?uid=2
+[运行时间：0.109712s] [吞吐率：9.11req/s] [内存消耗：3,909.60kb] [文件加载：77]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'ajax/categories',
+  'route' => 'frontend/Article/categoryList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://tpblog.local.cn/user/2/info',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+  'uid' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\ajax\category_list.tpl [ array (
+  0 => 'categorys',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002112s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_users` [ RunTime:0.001112s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_categories` [ RunTime:0.001240s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_categories` WHERE  `article_num` > 0  AND `user_id` = 2 ORDER BY `id` DESC [ RunTime:0.000657s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:57:05+08:00 ] 127.0.0.1 GET tpblog.local.cn/articles
+[运行时间：0.157049s] [吞吐率：6.37req/s] [内存消耗：4,285.40kb] [文件加载：83]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'articles',
+  'route' => 'frontend/Article/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tpblog.local.cn/user/2/info',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\list.tpl [ array (
+  0 => 'articles',
+  1 => 'page',
+  2 => 'currcategory',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001978s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_categories` [ RunTime:0.001038s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_categories` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.001113s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_articles` LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` ORDER BY `id` DESC LIMIT 0,8 [ RunTime:0.000447s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:57:05+08:00 ] 127.0.0.1 GET tpblog.local.cn/ajax/categories
+[运行时间：0.111622s] [吞吐率：8.96req/s] [内存消耗：3,908.51kb] [文件加载：77]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'ajax/categories',
+  'route' => 'frontend/Article/categoryList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://tpblog.local.cn/articles',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\ajax\category_list.tpl [ array (
+  0 => 'categorys',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001975s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_users` [ RunTime:0.001917s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_categories` [ RunTime:0.001129s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_categories` WHERE  `article_num` > 0 ORDER BY `id` DESC [ RunTime:0.000531s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:57:08+08:00 ] 127.0.0.1 GET tpblog.local.cn/
+[运行时间：0.145830s] [吞吐率：6.86req/s] [内存消耗：4,131.23kb] [文件加载：83]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'frontend/Index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tpblog.local.cn/articles',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\index\homepage.tpl [ array (
+  0 => 'articles',
+  1 => 'tags',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002115s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.001121s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tags` [ RunTime:0.021869s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tags` ORDER BY `id` DESC [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_users` [ RunTime:0.001264s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000705s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:57:08+08:00 ] 127.0.0.1 GET tpblog.local.cn/ajax/categories
+[运行时间：0.132744s] [吞吐率：7.53req/s] [内存消耗：3,908.50kb] [文件加载：77]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'ajax/categories',
+  'route' => 'frontend/Article/categoryList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://tpblog.local.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\ajax\category_list.tpl [ array (
+  0 => 'categorys',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001990s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_users` [ RunTime:0.001207s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.001123s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_categories` [ RunTime:0.001150s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_categories` WHERE  `article_num` > 0 ORDER BY `id` DESC [ RunTime:0.000502s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:57:08+08:00 ] 127.0.0.1 GET tpblog.local.cn/ajax/tags
+[运行时间：0.134531s] [吞吐率：7.43req/s] [内存消耗：3,980.30kb] [文件加载：78]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'ajax/tags',
+  'route' => 'frontend/Article/tagList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://tpblog.local.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\ajax\tag_list.tpl [ array (
+  0 => 'tags',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002630s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tags` [ RunTime:0.001468s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tags` ORDER BY `id` DESC [ RunTime:0.000497s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:57:09+08:00 ] 127.0.0.1 GET tpblog.local.cn/articles
+[运行时间：0.118113s] [吞吐率：8.47req/s] [内存消耗：4,092.02kb] [文件加载：81]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'articles',
+  'route' => 'frontend/Article/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tpblog.local.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\list.tpl [ array (
+  0 => 'articles',
+  1 => 'page',
+  2 => 'currcategory',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002300s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_categories` [ RunTime:0.000982s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_categories` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.001288s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_articles` LIMIT 1 [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` ORDER BY `id` DESC LIMIT 0,8 [ RunTime:0.000625s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:57:10+08:00 ] 127.0.0.1 GET tpblog.local.cn/ajax/categories
+[运行时间：0.125176s] [吞吐率：7.99req/s] [内存消耗：3,908.51kb] [文件加载：77]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'ajax/categories',
+  'route' => 'frontend/Article/categoryList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://tpblog.local.cn/articles',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\ajax\category_list.tpl [ array (
+  0 => 'categorys',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002039s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_users` [ RunTime:0.000958s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_categories` [ RunTime:0.021556s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_categories` WHERE  `article_num` > 0 ORDER BY `id` DESC [ RunTime:0.000469s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:57:11+08:00 ] 127.0.0.1 GET tpblog.local.cn/
+[运行时间：0.146504s] [吞吐率：6.83req/s] [内存消耗：4,131.23kb] [文件加载：83]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'frontend/Index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tpblog.local.cn/articles',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\index\homepage.tpl [ array (
+  0 => 'articles',
+  1 => 'tags',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001759s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.000926s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` ORDER BY `id` DESC LIMIT 5 [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tags` [ RunTime:0.021593s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tags` ORDER BY `id` DESC [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_users` [ RunTime:0.001169s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000517s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:57:11+08:00 ] 127.0.0.1 GET tpblog.local.cn/ajax/tags
+[运行时间：0.124065s] [吞吐率：8.06req/s] [内存消耗：3,980.30kb] [文件加载：78]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'ajax/tags',
+  'route' => 'frontend/Article/tagList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://tpblog.local.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\ajax\tag_list.tpl [ array (
+  0 => 'tags',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002429s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tags` [ RunTime:0.001193s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tags` ORDER BY `id` DESC [ RunTime:0.000392s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:57:11+08:00 ] 127.0.0.1 GET tpblog.local.cn/ajax/categories
+[运行时间：0.128202s] [吞吐率：7.80req/s] [内存消耗：3,908.50kb] [文件加载：77]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'ajax/categories',
+  'route' => 'frontend/Article/categoryList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://tpblog.local.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\ajax\category_list.tpl [ array (
+  0 => 'categorys',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001973s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_users` [ RunTime:0.001104s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_categories` [ RunTime:0.004051s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_categories` WHERE  `article_num` > 0 ORDER BY `id` DESC [ RunTime:0.000755s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:57:12+08:00 ] 127.0.0.1 GET tpblog.local.cn/articles
+[运行时间：0.136641s] [吞吐率：7.32req/s] [内存消耗：4,092.02kb] [文件加载：81]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'articles',
+  'route' => 'frontend/Article/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tpblog.local.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\list.tpl [ array (
+  0 => 'articles',
+  1 => 'page',
+  2 => 'currcategory',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001844s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_categories` [ RunTime:0.001040s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_categories` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.021629s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_articles` LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` ORDER BY `id` DESC LIMIT 0,8 [ RunTime:0.000507s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:57:12+08:00 ] 127.0.0.1 GET tpblog.local.cn/ajax/categories
+[运行时间：0.111084s] [吞吐率：9.00req/s] [内存消耗：3,908.51kb] [文件加载：77]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'ajax/categories',
+  'route' => 'frontend/Article/categoryList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://tpblog.local.cn/articles',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\ajax\category_list.tpl [ array (
+  0 => 'categorys',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001974s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_users` [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_users` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_categories` [ RunTime:0.001411s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_categories` WHERE  `article_num` > 0 ORDER BY `id` DESC [ RunTime:0.000778s ]
+---------------------------------------------------------------
+[ 2018-08-26T09:57:13+08:00 ] 127.0.0.1 GET tpblog.local.cn/articles/4/show
+[运行时间：0.181401s] [吞吐率：5.51req/s] [内存消耗：4,115.09kb] [文件加载：85]
+[ info ] [ LANG ] D:\wamp64\www\tpblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'articles/<id>/show',
+  'route' => 'frontend/Article/detail',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+    'id' => '4',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tpblog.local.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tpblog.local.cn/articles',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=85129216; YPF8827340282Jdskjhfiw_928937459182JAX666=68.168.130.131; uid=tpblog5b768b195954d5.65356607; PHPSESSID=t1o0kgfqak6dt2tc87hvj7lus7',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\tpblog\application\frontend\view\article\detail.tpl [ array (
+  0 => 'article',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002125s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_articles` [ RunTime:0.001075s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_articles` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] UPDATE `blog_articles`  SET `views` = 12  WHERE  `id` = 4 [ RunTime:0.020384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_categories` [ RunTime:0.001759s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_categories` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000754s ]
+[ error ] [8]Trying to get property of non-object[D:\wamp64\www\tpblog\runtime\temp\24ce3aa7efa558f69808ef64a3dd3a2b.php:89]

@@ -1,4 +1,4 @@
-<?php /*a:2:{s:65:"D:\wamp64\www\tpblog\application\frontend\view\article\detail.tpl";i:1535185195;s:62:"D:\wamp64\www\tpblog\application\frontend\view\common\base.tpl";i:1535013977;}*/ ?>
+<?php /*a:2:{s:65:"D:\wamp64\www\tpblog\application\frontend\view\article\detail.tpl";i:1535251682;s:62:"D:\wamp64\www\tpblog\application\frontend\view\common\base.tpl";i:1535013977;}*/ ?>
 <!DOCTYPE html>
 <!-- saved from url=(0032)http://fapiao.itdiffer.com/login -->
 <html lang="en">
@@ -86,13 +86,13 @@
   <div class="col-md-9">
     <ol class="breadcrumb">
       <li><a href="<?php echo url('homepage'); ?>">首页</a></li>
-      <li><a href="<?php echo url('article_list', 'category='.$article->category->id); ?>"><?php echo htmlentities($article->category->name); ?></a></li>
+      <li><a href="<?php echo url('article_list', 'category='.$article->category_id); ?>"><?php echo htmlentities($article->title); ?></a></li>
       <li class="active">文章</li>
     </ol>
     <section class="content-wrap">
       <header class="post-head">
         <h1 class="post-title"><?php echo htmlentities($article->title); ?></h1>
-        <span class="author">作者：<a href="<?php echo url('user_info', 'id='.$article->user->id); ?>"><?php echo htmlentities($article->user->nickname); ?></a></span> •
+        <span class="author">作者：<a href="<?php echo url('user_info', 'id='.$article->user_id); ?>"><?php echo htmlentities($article->user->nickname); ?></a></span> •
         <time class="post-date"><?php echo htmlentities(date("Y年m月d日",!is_numeric($article->created_time)? strtotime($article->created_time) : $article->created_time)); ?></time>
         &nbsp;&nbsp;&nbsp;阅读 (<?php echo htmlentities($article->views); ?>)
       </header>
@@ -108,7 +108,7 @@
       </section>
       <section class="post-content">
         <b>分类</b>&nbsp;&nbsp;&nbsp;
-        <a href="<?php echo url('article_list', 'category='.$article->category->id); ?>"><span class="badge blue"><?php echo htmlentities($article->category->name); ?></span></a>
+        <a href="<?php echo url('article_list', 'category='.$article->category_id); ?>"><span class="badge blue"><?php echo htmlentities($article->title); ?></span></a>
       </section>
       <br>
       <section class="post-content"> 

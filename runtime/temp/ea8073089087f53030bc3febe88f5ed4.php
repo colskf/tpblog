@@ -1,4 +1,4 @@
-<?php /*a:3:{s:65:"D:\wamp64\www\tpblog\application\frontend\view\index\homepage.tpl";i:1535013977;s:62:"D:\wamp64\www\tpblog\application\frontend\view\common\base.tpl";i:1535013977;s:82:"D:\wamp64\www\tpblog\application\frontend\view\common\widget\article-item-home.tpl";i:1535185195;}*/ ?>
+<?php /*a:3:{s:65:"D:\wamp64\www\tpblog\application\frontend\view\index\homepage.tpl";i:1535013977;s:62:"D:\wamp64\www\tpblog\application\frontend\view\common\base.tpl";i:1535013977;s:82:"D:\wamp64\www\tpblog\application\frontend\view\common\widget\article-item-home.tpl";i:1535254112;}*/ ?>
 <!DOCTYPE html>
 <!-- saved from url=(0032)http://fapiao.itdiffer.com/login -->
 <html lang="en">
@@ -78,7 +78,7 @@
         <?php echo mb_substr($article->body, 0, 100); ?>...
       </div>
     </a>
-    <p class="blog-meta"><a href="<?php echo url('user_info', 'id='.$article->user->id); ?>"><?php echo htmlentities($article->user->nickname); ?></a> 发布于 <?php echo htmlentities(date('Y年m月d日 H时i分',!is_numeric($article->created_time)? strtotime($article->created_time) : $article->created_time)); ?></p>
+    <p class="blog-meta"><a href="<?php echo url('user_info', 'id='.$article->user_id); ?>"><?php echo htmlentities($article->user->nickname); ?></a> 发布于 <?php echo htmlentities(date('Y年m月d日 H时i分',!is_numeric($article->created_time)? strtotime($article->created_time) : $article->created_time)); ?></p>
   </div>
 </div>
 <hr>

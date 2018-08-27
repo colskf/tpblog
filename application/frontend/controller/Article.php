@@ -27,6 +27,7 @@ class Article extends Controller
 		//热门文章
 		//$hotArtivle = ArticleModel::->order('views', 'desc')->limit(5)->select();
 
+		$this->assign('category', $category);
 		$this->assign('articles', $articles);
 		$this->assign('page', $page);
 		$this->assign('currcategory', $category);
@@ -48,7 +49,7 @@ class Article extends Controller
 
 		// $tagIds = ArticleTagMapModel::where('article_id', $id)->column('tag_id');
 		// $article->tags = TagModel::whereIn('id', $tagIds)->select();
-
+//print_r($article);die();
 		$this->assign('article', $article);
         return $this->fetch('article/detail');
 	}
@@ -68,7 +69,7 @@ class Article extends Controller
 		$this->assign('tag', $tag);
 		$this->assign('articles', $articles);
 		$this->assign('page', $page);
-        return $this->fetch('article/tag_atricle_list');
+        return $this->fetch('article/tag_article_list');
 	}
 
 	public function userInfo(Request $request, $id)

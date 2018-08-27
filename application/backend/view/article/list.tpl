@@ -34,7 +34,7 @@
                 <th scope="row">{$key+1}</th>
                 <td>{$article->title}</td>
                 <!-- <td>{// $category->name|default=""}</td> -->
-                <td>{$article->category->name}</td>
+                <td>{$article->category_id}</td>
                 <td>{$article->views}</td>
                 <td>{$article->created_time|date='Y-m-d H:i:s'}</td>
                 <td>{$article->updated_time|date='Y-m-d H:i:s'}</td>

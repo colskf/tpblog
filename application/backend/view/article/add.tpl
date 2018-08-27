@@ -37,7 +37,9 @@
         </div>
         <div class="form-group">
           <label for="id_content">文章内容</label>
-          <textarea class="form-control" id="id_content" rows="8" name="content"></textarea>
+          <div id="container" name="content" type="text/plain">
+          <!-- <textarea class="form-control" id="id_content" rows="8" name="content"></textarea> -->
+          </div>
         </div>
         <button type="submit" class="btn btn-primary">提交</button>
       </form>
@@ -47,5 +49,17 @@
 {/block}
 
 {block name="customscript"}
-  <script src="__STATIC__/js/backend/article_manage.js"></script>
+    <script src="__STATIC__/js/backend/article_manage.js"></script>
+    <!-- 加载编辑器的容器 -->
+    <script id="container" name="content" type="text/plain">
+        
+    </script>
+    <!-- 配置文件 -->
+    <script type="text/javascript" src="__STATIC__/utf8-php/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="__STATIC__/utf8-php/ueditor.all.js"></script>
+    <!-- 实例化编辑器 -->
+    <script type="text/javascript">
+        var ue = UE.getEditor('container');
+    </script>
 {/block}

@@ -24,13 +24,13 @@
   <div class="col-md-9">
     <ol class="breadcrumb">
       <li><a href="{:url('homepage')}">首页</a></li>
-      <li><a href="{:url('article_list', 'category='.$article->category->id)}">{$article->category->name}</a></li>
+      <li><a href="{:url('article_list', 'category='.$article->category_id)}">{$article->title}</a></li>
       <li class="active">文章</li>
     </ol>
     <section class="content-wrap">
       <header class="post-head">
         <h1 class="post-title">{$article->title}</h1>
-        <span class="author">作者：<a href="{:url('user_info', 'id='.$article->user->id)}">{$article->user->nickname}</a></span> •
+        <span class="author">作者：<a href="{:url('user_info', 'id='.$article->user_id)}">{$article->user->nickname}</a></span> •
         <time class="post-date">{$article->created_time|date="Y年m月d日"}</time>
         &nbsp;&nbsp;&nbsp;阅读 ({$article->views})
       </header>
@@ -46,7 +46,7 @@
       </section>
       <section class="post-content">
         <b>分类</b>&nbsp;&nbsp;&nbsp;
-        <a href="{:url('article_list', 'category='.$article->category->id)}"><span class="badge blue">{$article->category->name}</span></a>
+        <a href="{:url('article_list', 'category='.$article->category_id)}"><span class="badge blue">{$article->title}</span></a>
       </section>
       <br>
       <section class="post-content"> 

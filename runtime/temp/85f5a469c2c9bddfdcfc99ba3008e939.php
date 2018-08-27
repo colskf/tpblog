@@ -1,4 +1,4 @@
-<?php /*a:1:{s:77:"D:\wamp64\www\tpblog\application\frontend\view\article\ajax\category_list.tpl";i:1535013977;}*/ ?>
+<?php /*a:1:{s:77:"D:\wamp64\www\tpblog\application\frontend\view\article\ajax\category_list.tpl";i:1535253379;}*/ ?>
 <div class="visible-md visible-lg">
   <div class="panel panel-custom">
     <div class="panel-heading">博客分类</div>
